@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>oyasumi team</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background-image: url("https://cdn.discordapp.com/attachments/755581237636104242/1135738139256819753/Sin_titu4444lo.jpg"), url("ruta_de_fondoB.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      color: black;
+    }
+
+    .imagenA {
+      width: 400px;
+      height: auto;
+      margin-top: 7cm;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 2rem;
+    }
+
+    .button {
+      width: 156px;
+      height: 166px;
+      margin: 5px;
+      padding: 0; /* Remove any padding */
+      border: none;
+      background-color: transparent; /* Set the background color to transparent */
+      background-size: cover;
+      cursor: pointer;
+      transition: transform 0.2s; /* Add a smooth transition for the transform property */
+    }
+
+    /* Set background images for each button */
+    #button1 {
+      background-image: url("https://cdn.discordapp.com/attachments/1090754821973356614/1133191515045371985/imafafage.png");
+    }
+
+    #button2 {
+      background-image: url("URL_OF_IMAGE_2");
+    }
+
+    /* Apply the hover effect */
+    .button:hover {
+      transform: scale(1.1); /* Scale the button to 110% on hover */
+    }
+
+    /* Estilo para los botones nuevos */
+    .extra-buttons-container {
+      position: absolute;
+      top: 20px; /* Ajusta la distancia desde la parte superior */
+      left: 20px; /* Ajusta la distancia desde la izquierda */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .extra-button {
+      width: 32px;
+      height: 32px;
+      margin: 5px;
+      padding: 0; /* Remove any padding */
+      border: none;
+      background-color: transparent; /* Set the background color to transparent */
+      background-size: cover;
+      cursor: pointer;
+      transition: transform 0.2s; /* Add a smooth transition for the transform property */
+    }
+
+    /* Set background images for each extra button */
+    #youtube-button {
+      background-image: url("https://cdn.discordapp.com/attachments/755581237636104242/1133662479654867045/you.jpg");
+    }
+
+    #tiktok-button {
+      background-image: url("https://media.discordapp.net/attachments/755581237636104242/1133666081408553000/tik.png");
+    }
+
+    #twitter-button {
+      background-image: url("https://cdn.discordapp.com/attachments/755581237636104242/1133668354259943495/twiter.jpeg");
+    }
+
+    /* Apply the hover effect to the extra buttons */
+    .extra-button:hover {
+      transform: scale(1.1); /* Scale the button to 110% on hover */
+    }
+  </style>
+</head>
+<body>
+  <img class="imagenA" src="https://cdn.discordapp.com/attachments/1090754821973356614/1133494485414846494/Sin_titu4444lo.png" alt="Imagen A">
+
+  <div class="button-container">
+    <!-- Botón 1 que enlaza a la página "Sobre nosotros" -->
+    <a href="https://sites.google.com/view/oyasumiteam123/pagina-principal/sobrenosotros?authuser=0" target="_self">
+      <button id="button1" class="button"></button>
+    </a>
+
+    <!-- Botón 2 que podría enlazar a otro sitio o página -->
+    <button id="button2" class="button" onclick="window.location.href='URL_DE_OTRA_PAGINA';"></button>
+  </div>
+
+  <div class="extra-buttons-container">
+    <!-- Botones extra que abren enlaces en nuevas pestañas -->
+    <button id="youtube-button" class="extra-button" onclick="window.open('https://www.youtube.com/@Oyasumi_Team', '_blank');"></button>
+    <button id="tiktok-button" class="extra-button" onclick="window.open('https://www.tiktok.com/@oyasumiteam', '_blank');"></button>
+    <button id="twitter-button" class="extra-button" onclick="window.open('https://twitter.com/Oyasumi_Team_OF', '_blank');"></button>
+  </div>
+</body>
+</html>
